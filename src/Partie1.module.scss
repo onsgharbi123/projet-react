@@ -1,0 +1,132 @@
+.container1{
+    
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    height: 98vh;
+   //background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://yevgenysim-turkey.github.io/incline/assets/img/42.jpg");
+background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+.vid{
+    width: 100%;
+    z-index: -1000;
+    position: absolute;
+}
+
+
+.title1{
+    font-family: "Century Gothic";
+    padding-top: 250px;
+   
+    font-weight: 900;
+   z-index: 50;
+    color: white;
+    font-size: 4rem;
+    
+  }
+  .tiltle-1{
+    animation: title 0.5s linear  ;
+    font-family: "Century Gothic";
+    padding-top: 250px;
+   
+    font-weight: 900;
+   
+    color: white;
+    font-size: 4rem;
+  }
+.title2{
+    width: 60%;
+    padding-top: 100px;
+    animation: title 0.5s linear  ;
+    color: white;
+}
+@keyframes title{
+    from{transform: translateX(-100%);}
+    to{transform: translateX(0%);}
+}
+
+.btn{
+    border: none;
+    background-color: #45B53B;
+    color: white;
+    border-radius: 5px;
+    opacity: 70%;
+    height: 60px;
+    width: 170px;
+}
+.part2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: #EEEEEE;
+}
+.para2{
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EEEEEE;
+    padding-right: 50px;
+    font-family: "Century Gothic";
+}
+.button{
+    border: none;
+    background-color: #45B53B;
+    color: white;
+    border-radius: 5px;
+    opacity: 70%;
+    height: 60px;
+    width: 170px;
+    margin-right: 10px;  
+}
+
+.container2{
+    width: 100%;
+    height: 120vh;
+    background-color: #EEEEEE;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding-top: 90px;
+font-family: "Century Gothic";
+}
+.explorer{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.para{
+    width: 450px;
+    margin-left: 40px;
+    align-items: center;
+    padding-top: 100px;
+    
+}
+.titre{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    
+}
+.A{
+    font-size: 3rem;
+}
+
+.im1{
+    margin-right: 5px;
+    margin-bottom: 10px;
+
+}
+
+
+.im2{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
