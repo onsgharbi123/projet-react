@@ -71,6 +71,7 @@ a {
   padding-left: 0;
 }
 .nav__link {
+
   list-style: none;
   padding: 10px;
 }
@@ -156,7 +157,7 @@ a {
     animation: fadeIn 0.3s 1;
   }
   .nav__link-wrapper.expanded li {
-    opacity: 0;
+    opacity: 1;
     align-self: center;
   }
   .nav__link-wrapper.expanded li:nth-child(1) {
@@ -192,7 +193,7 @@ a {
     content: normal;
   }
   .nav__link-wrapper li {
-    opacity: 0;
+    opacity: 1;
   }
   .nav__link-wrapper li:nth-child(1) {
     animation: slideFadeInAlt 0.15s 1;
@@ -228,7 +229,7 @@ a {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 1; 
   }
 }
 @keyframes slideFadeIn {
@@ -260,37 +261,5 @@ a {
     
 
   
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 

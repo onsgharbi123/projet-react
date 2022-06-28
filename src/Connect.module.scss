@@ -1,0 +1,80 @@
+.container{
+   
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh ;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    font-family: "Century Gothic";
+}
+.form1{
+    
+    width: 44%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    
+    
+}
+.form2{
+    width: 56%;
+    height: 100vh;
+    background-image: url("https://connect.jobteaser.com/images/medium-34e4d3034098786cbea42e0ab709dd26.jpeg?vsn=d");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+
+}
+.mincontainer{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.title1{
+    font-size: 3.2rem;
+    color :#45B53B;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+.btn1{
+    height: 50px;
+    background-color: #45B53B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.btn1:hover{
+    color: black;
+    background-color: white;
+    border: #45B53B solid 2px;
+}
+.btn2{
+    height: 50px;
+border: none;
+text-decoration: underline;
+background-color: white;
+}
+.title2{
+    font-size:4.2rem;
+    color :white;
+    font-weight: bold;
+    
+     
+}
+.slogan{
+    width: 500px;
+    color: white;
+}
