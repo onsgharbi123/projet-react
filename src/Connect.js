@@ -35,7 +35,9 @@ export default function Connect() {
           </button>
           <br />
           <h4>Pas encore de compte ? </h4>
-          <button className={Style?.btn2}>S'inscrire</button>
+          <button className={Style?.btn2} onClick={() => navigate("/Compte")}>
+            S'inscrire
+          </button>
         </div>
       </div>
       <div className={Style?.form2}>

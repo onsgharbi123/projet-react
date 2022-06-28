@@ -1,0 +1,59 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("https://images.prismic.io/jobteaser-corporate-website/79703222-7da9-4fa8-ab8c-5df67638dec3_photo-1540406118085-800311adbbdd.jpg?auto=compress,format");
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: "Century Gothic";
+padding-bottom: 60px;
+
+}
+.box{
+    
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: start;
+
+    
+  
+}
+.minbox{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    color: rgb(69, 181, 59);
+    margin-top: 40px;
+    font-weight: bold;
+    width: 95%;
+}
+.btn1{
+    width: 150px;
+height: 50px;
+background-color: rgba(69, 181, 59, 0.8);
+margin-left: 150px;
+margin-top: 20px;
+border: none;
+border-radius: 3px;
+color: white;
+margin-bottom: 30px;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+}

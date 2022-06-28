@@ -4,7 +4,10 @@ import { UserContext } from "./Usercontext";
 import { useState } from "react";
 
 function App() {
-  const [users, setusers] = useState([{ name: "ons", mdp: "123" }]);
+  const [users, setusers] = useState([
+    { name: "ons", mdp: "123" },
+    { name: "selim", mdp: "1234" },
+  ]);
 
   return (
     <div className="App">
