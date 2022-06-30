@@ -262,4 +262,9 @@ a {
 
   
 }
-
+.display{
+  display: flex;
+  flex-direction: row;
+  
+  
+}

@@ -17,8 +17,10 @@ export default function Nav() {
   return (
     <div>
       <nav className={nav ? "nav active" : "nav"}>
-        <img src={Taswira} width={170} height={70} />
-        <h4>STAGY</h4>
+        <div className="display">
+          <img src={Taswira} width={170} height={70} />
+          <h4>STAGY</h4>
+        </div>
         <button id="burger" className="nav__burger-button">
           <div className="nav__burger">
             <div className="nav__burger-inner" />

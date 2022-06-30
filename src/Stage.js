@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Stage() {
-  return (
-    <div>Stage</div>
-  )
+  return <div></div>;
 }
