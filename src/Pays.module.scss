@@ -1,0 +1,41 @@
+.container{
+    height: 70vh;
+    width: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+    padding-top: 60px;
+}
+.element{
+    width: 20%;
+    height: 60vh;
+    background-color: #EEEEEE;
+    border-radius: 9px;
+}
+.tunisie{
+    width: 100%;
+    height: 85%;
+    background-image: url('https://images.pexels.com/photos/891125/pexels-photo-891125.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+
+}
+.france{
+    width: 100%;
+    height: 85%;
+    background-image: url('https://images.pexels.com/photos/1530259/pexels-photo-1530259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+}
+.canada{
+    width: 100%;
+    height: 85%;
+    background-image: url('https://images.pexels.com/photos/11331741/pexels-photo-11331741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
+    border-radius: 9px;
+}
