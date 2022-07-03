@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Taswira from "./Sans-titre---1.png";
+import Taswira from "./logoelithebelihons---1.png";
 import { useState } from "react";
 
 export default function Nav() {
@@ -17,8 +17,10 @@ export default function Nav() {
   return (
     <div>
       <nav className={nav ? "nav active" : "nav"}>
-        <div className="display">
-          <img src={Taswira} width={170} height={70} />
+        <div className="logo">
+          <div className="pos-abs">
+            <img src={Taswira} width={50} height={30} />
+          </div>
           <h4>STAGY</h4>
         </div>
         <button id="burger" className="nav__burger-button">

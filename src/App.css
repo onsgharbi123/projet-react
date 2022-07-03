@@ -262,9 +262,12 @@ a {
 
   
 }
-.display{
+.logo{
+  height: 50px;
   display: flex;
-  flex-direction: row;
-  
-  
+  width: 120px;
 }
+/*.pos-abs{
+  position: absolute;
+   margin-top: 0px   !important;
+}*/

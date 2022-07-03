@@ -7,9 +7,10 @@ import Compte from "./Compte";
 import Conseil from "./Conseil";
 
 import Entreprise from "./Entreprise";
-import Nav from "./Nav";
-import Partie1 from "./Partie1";
+
+import Ajoutannonce from "./Ajoutannonce";
 import Stage from "./Stage";
+import Nav from "./Nav";
 export default function MainRouter() {
   return (
     <Router>
@@ -22,6 +23,7 @@ export default function MainRouter() {
           <Route path="/Entreprise" element={<Entreprise />} />
           <Route path="/Connect" element={<Connect />} />
           <Route path="/Compte" element={<Compte />} />
+          <Route path="/Ajoutannonce" element={<Ajoutannonce />} />
         </Routes>
       </div>
     </Router>

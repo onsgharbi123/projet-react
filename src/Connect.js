@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Style from "./Connect.module.scss";
 import { UserContext } from "./Usercontext";
+import Nav from "./Nav";
 
 export default function Connect() {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ export default function Connect() {
 
   return (
     <div className={Style?.container}>
+      <Nav />
       <div className={Style?.form1}>
         <h1 className={Style?.title1}>Se Connecter</h1>
         <div className={Style?.mincontainer}>
