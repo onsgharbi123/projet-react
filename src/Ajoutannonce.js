@@ -9,7 +9,7 @@ export default function Ajoutannonce() {
   const [post, setpost] = useState("");
   const [ns, setns] = useState();
   const [duree, setduree] = useState("");
-  const [dexp, setdexp] = useState("");
+  const [descrip, setdescrip] = useState("");
   const [logo, setlogo] = useState("");
   const [pays, setpays] = useState("");
   const handleFile = (event) => {
@@ -25,7 +25,7 @@ export default function Ajoutannonce() {
         post: post,
         ns: ns,
         dure: duree,
-        dexp: dexp,
+        descrip: descrip,
         logo: logo,
         pays: pays,
       },
@@ -36,45 +36,72 @@ export default function Ajoutannonce() {
       <div className={scss?.nav}></div>
       <div className={scss?.flex}>
         <div className={scss?.form}>
-          <h1>Recrutez vos futurs talents directement avec STAGY </h1>
+          <p className={scss?.title}>
+            Recrutez vos futurs talents directement avec{"  "}
+            <span className={scss?.stagy}>STAGY</span>
+          </p>
           <div>
             <label>Nom de l'entreprise :</label>
-            <input type="text" onChange={(e) => setnom(e.target.value)} />
+            <input
+              className={scss?.input}
+              type="text"
+              onChange={(e) => setnom(e.target.value)}
+            />
           </div>
           <div>
             <label>Poste disponible :</label>
-            <input type="text" onChange={(e) => setpost(e.target.value)} />
+            <input
+              className={scss?.input}
+              type="text"
+              onChange={(e) => setpost(e.target.value)}
+            />
           </div>
           <div>
             <label>Nombre de stagieres demandes :</label>
-            <input type="number" onChange={(e) => setns(e.target.value)} />
+            <input
+              className={scss?.input}
+              type="number"
+              onChange={(e) => setns(e.target.value)}
+            />
           </div>
           <div>
             <label>Duree de stage :</label>
-            <input type="text" onChange={(e) => setduree(e.target.value)} />
+            <input
+              className={scss?.input}
+              type="text"
+              onChange={(e) => setduree(e.target.value)}
+            />
           </div>
           <div>
-            <label>Date d'expiration :</label>
-            <input type="date" onChange={(e) => setdexp(e.target.value)} />
+            <label>Description :</label>
+            <textarea
+              className={scss?.input}
+              onChange={(e) => setdescrip(e.target.value)}
+            ></textarea>
           </div>
           <div>
             <label>Logo d'entreprise :</label>
-            <input type="file" onChange={handleFile} />
+            <input className={scss?.input} type="file" onChange={handleFile} />
           </div>
           <div>
             <label>L'emplacement</label>
-            <select onChange={(e) => setpays(e.target.value)}>
+            <select
+              className={scss?.input}
+              onChange={(e) => setpays(e.target.value)}
+            >
               <option>Tunisie</option>
               <option>Canada</option>
               <option>France</option>
             </select>
           </div>
-          <button onClick={() => ajoutannonce()}>Publier Votre Offre</button>
+          <button className={scss?.button} onClick={() => ajoutannonce()}>
+            Publier Votre Offre
+          </button>
         </div>
         <div className={scss?.image}>
           <h3>
-            Optimisez votre temps et gagnez en efficacité. Diffusez vos offres
-            en 1 clic
+            <span className={scss?.o}>O</span>ptimisez votre temps et gagnez en
+            efficacité. Diffusez vos offres en 1 clic
           </h3>
         </div>
       </div>

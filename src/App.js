@@ -11,13 +11,43 @@ function App() {
   ]);
   const [offres, setoffres] = useState([
     {
-      nom: "SANTOS",
-      post: "Développeur WEB APPLICATION ",
-      ns: "2",
+      nom: "JOB Assurances",
+      post: "Conseiller(e) commercial(e) / téléphoniste ",
+      ns: "2 stagieres",
       dure: "1mois",
-      dexp: "juillet 2022",
-      logo: "https://images.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg?auto=compress&cs=tinysrgb&w=600",
-      pays: "tunisie",
+      descrip:
+        "JOB Assurances vous propose une offre de stage à Paris (75) Nos locaux sont situés dans le chic 16ème arrondissement",
+      logo: "https://www.stage.fr/files/pictures/JOB%27ASSUR.png",
+      pays: "France",
+    },
+    {
+      nom: "Auchan Retail France",
+      post: "Contrôleur interne junior en stage ",
+      ns: "1 stagieres",
+      dure: "2mois",
+      descrip:
+        "Nous recherchons un Contrôleur Interne Junior Finance en stage F/H, pour rejoindre nos équipes de Villeneuve d'Ascq !",
+      logo: "https://www.stage.fr/files/pictures/b36dee2c12dd0fcf7e99d5209296a20c.png",
+      pays: "France",
+    },
+    {
+      nom: "GTEC Training",
+      post: "Infographiste",
+      ns: "4 stagieres",
+      dure: "3mois",
+      descrip: "Des infographistes débutant(e)s ou expérimenté(e)s",
+      logo: "https://www.tanitjobs.com/files/pictures/2021/02/24/Gtec_group.png",
+      pays: "Tunisie",
+    },
+    {
+      nom: "DASSAULT SYSTEMES",
+      post: "Juriste en Droit boursier  ",
+      ns: "3 stagieres",
+      dure: "1mois",
+      descrip:
+        "Rattaché.e à la Direction Juridique Corporate du groupe,pour traiter des dossiers relevant principalement du droit boursier et de la gouvernance.",
+      logo: "https://www.stage.fr/files/pictures/c8384841a25bb6e8e7c09fe3d119ac34.png",
+      pays: "France",
     },
   ]);
 

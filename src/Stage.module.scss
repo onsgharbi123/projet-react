@@ -7,7 +7,7 @@
 }
 .container{
     width: 100%;
-    height: 1000px;
+    min-height: 1000px;
     padding-top: 80px;
     background-color: #EEEEEE;
     display: flex;
@@ -37,4 +37,37 @@ font-weight: 500;}
 .btn:hover{
     color: rgb(88, 189, 79);
     text-decoration: underline;
+}
+.france{
+    width: 93%;
+height: 55vh;
+display: flex;
+flex-direction: row;
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/2901211/pexels-photo-2901211.jpeg?auto=compress&cs=tinysrgb&w=600");
+
+background-position: center;
+background-size: cover;
+align-items: flex-end;
+}
+.tunisie{
+    width: 93%;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/9424943/pexels-photo-9424943.jpeg?auto=compress&cs=tinysrgb&w=600");
+    
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+}
+.canada{
+    width: 93%;
+    height: 55vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress&cs=tinysrgb&w=600");
+    
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
 }

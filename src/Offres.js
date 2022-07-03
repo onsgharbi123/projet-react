@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Offrecontext } from "./Offrecontext";
 import scss from "./Offre.module.scss";
-import Partie5 from "./Partie5";
 
 export default function Offres() {
   const { offres } = useContext(Offrecontext);
@@ -10,12 +9,20 @@ export default function Offres() {
       {offres.map((e) => {
         return (
           <div className={scss?.item}>
-            <div>
-              <img src={e.logo} width={160} height={150} />
+            <div className={scss?.logo}>
+              <img src={e.logo} width={160} height={180} />
             </div>
-            <div>
-              <h3>{e.nom}</h3>
-              <h4>{e.pays}</h4>
+            <div className={scss?.infs}>
+              <h4 className={scss?.post}>{e.post}</h4>
+              <div className={scss?.display}>
+                <p className={scss?.nom}>{e.nom}</p>
+                <p className={scss?.pays}>{e.pays}</p>
+              </div>
+              <p className={scss?.desc}>{e.descrip}</p>
+              <div className={scss?.display}>
+                <p className={scss?.pays}>{e.dure}</p>
+                <p className={scss?.pays}>{e.ns}</p>
+              </div>
             </div>
           </div>
         );
