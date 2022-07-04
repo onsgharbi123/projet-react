@@ -1,0 +1,220 @@
+.back{
+height : 600px;
+width: 100%;
+ background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+    position: relative;
+
+
+}
+.text1{
+font-size: 2.25rem;
+    line-height: 2.5rem;
+color : black ;
+     padding-top: 5rem;
+font-weight: 700;
+    text-align: center;
+    letter-spacing: 0em;
+}
+.text2{
+    padding-top: 1.75rem;
+padding-left: 18rem;
+    padding-right: 18rem;
+    text-align: center;  
+  line-height: 1.5rem;
+    font-weight: 480;
+    }
+
+
+
+
+.text3{
+margin-left: 15rem/* 240px */;
+    margin-right: 15rem/* 240px */;   
+ margin-top: 3rem/* 48px */;
+    align-items: center;
+}
+.back2{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+.back3{
+    border-width: 1px;
+    border-style: solid;
+--tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+--tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.back3:hover{
+  --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+ --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+
+}
+.text3{
+    padding-top: 0.5rem;
+   
+
+}
+.text4{
+ border-width: 1px;
+    border-style: solid;
+--tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+    cursor: pointer;
+}
+.text4:hover{
+
+  --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+--tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}	
+.back4{
+
+ --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+    width: 100%;
+    height: 1500px;
+    margin-top: 4rem;
+
+}
+.back5{
+    padding-top: 2.5rem/* 40px */;
+
+}
+.back6{
+ --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    width: 1100px;
+    height: 300px;
+ margin-left: 7rem;
+    margin-right: 7rem;
+/* nchouf box shodow */
+}
+.back7{
+display : flex;
+
+}
+.text5{
+    text-align: left;
+    padding-top: 2.5rem;
+    padding-left: 5rem;
+font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: rgb(132 204 22 );
+
+}
+.text6{
+    text-align: left;
+    padding-top: 2.5rem/* 40px */;
+    padding-left: 5rem/* 80px */;
+}
+.text7{
+text-align: left;
+    padding-top: 1rem/* 40px */;
+    padding-left: 5rem/* 80px */;
+
+}
+.img1{
+    width: 565px;
+    height: 300px;
+    padding-left: 2.5rem;
+    position: absolute;
+}
+.back7{
+    display: flex;
+    margin-top: 4rem;
+}
+.back8{
+    background-color: rgb(255 255 255 );
+    width: 380px;
+    height: 505px;
+    margin-left: 4rem;
+    margin-right: 2.5rem;
+/* box shadow*/
+}
+.img2{
+    width: 380px;
+    height: 220px;
+}
+.text8{
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgb(132 204 22 );
+
+}
+.text9{
+    text-align: left;
+    padding-top: 1rem/* 16px */;
+    padding-left: 2.5rem/* 40px */;
+    color: rgb(71 85 105);
+
+}
+.back9{
+    background-color: rgb(255 255 255 );
+    width: 380px;
+    height: 505px;
+    margin-right: 2.5rem/* 40px */;
+/* box shdoww*/	
+}
+.img3{
+
+    width: 380px;
+    height: 220px;
+
+
+}
+.back10{
+    text-align: left;
+    padding-top: 1rem/* 16px */;
+       padding-left: 2rem/* 32px */;
+     font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;    
+color: rgb(132 204 22 );
+
+}
+.text10{
+    text-align: left;
+    padding-top: 1rem/* 16px */;
+	    padding-left: 2.5rem/* 40px */;
+    color: rgb(71 85 105 );
+}
+.back11{
+   background-color: rgb(255 255 255);
+    width: 380px;
+    height: 505px;
+    margin-right: 2.5rem;
+ }
+
+.img4{
+    width: 380px;
+    height: 220px;
+
+}
+.text11{
+    text-align: left;
+    padding-top: 1rem/* 16px */;
+    padding-left: 2rem/* 32px */;
+	 font-size: 1.5rem/* 24px */;
+    line-height: 2rem;
+color : green ;
+}
+.text12{
+    text-align: left;
+    padding-top: 1rem/* 16px */;
+    padding-left: 2.5rem/* 40px */;
+    color: rgb(71 85 105);
+    }
+    .imgg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        mix-blend-mode: overlay;
+    }

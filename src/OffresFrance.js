@@ -40,7 +40,7 @@ export default function OffresFrance() {
               return (
                 <div className={scss?.item}>
                   <div>
-                    <img src={e.logo} width={160} height={180} />
+                    <img src={e.logo} width={170} height={180} />
                   </div>
                   <div className={scss?.infs}>
                     <h4 className={scss?.post}>{e.post}</h4>
