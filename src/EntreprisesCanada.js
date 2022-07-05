@@ -1,8 +1,10 @@
+import React from "react";
 import scss from "./entreprise.module.scss";
-import Offresentreprises from "./Offresentreprises";
 import { useNavigate } from "react-router-dom";
-
-export default function Entreprise() {
+import { useContext } from "react";
+import { Entreprisescontext } from "./Entreprisescontext";
+export default function EntreprisesCanada() {
+  const { entreprises } = useContext(Entreprisescontext);
   const navigate = useNavigate();
   return (
     <div>
@@ -39,7 +41,31 @@ export default function Entreprise() {
         </div>
 
         <div className={scss?.offres}>
-          <Offresentreprises />
+          {entreprises.map((e) => {
+            if (e.pays == "Canada") {
+              return (
+                <div className={scss?.box}>
+                  <div className={scss?.couverture}>
+                    <img src={e.couv} width={370} height={100} />
+                  </div>
+                  <div className={scss?.logo}>
+                    <img
+                      className={scss?.logo}
+                      src={e.logo}
+                      width={120}
+                      height={140}
+                    />
+                  </div>
+                  <div className={scss?.infs}>
+                    <h5 className={scss?.nom}>{e.nom}</h5>
+                    <p className={scss?.desc}>{e.desc}</p>
+                    <p className={scss?.pres}>{e.pres}</p>
+                    <button className={scss?.voir}>Voir Plus</button>
+                  </div>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     </div>

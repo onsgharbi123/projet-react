@@ -14,6 +14,9 @@ import Nav from "./Nav";
 import OffresTunisie from "./OffresTunisie";
 import OffresFrance from "./OffresFrance";
 import OffresCanada from "./OffresCanada";
+import EntreprisesTunisie from "./EntreprisesTunisie";
+import EntreprisesFrance from "./EntreprisesFrance";
+import EntreprisesCanada from "./EntreprisesCanada";
 export default function MainRouter() {
   return (
     <Router>
@@ -30,6 +33,9 @@ export default function MainRouter() {
           <Route path="/OffresTunisie" element={<OffresTunisie />} />
           <Route path="/OffresFrance" element={<OffresFrance />} />
           <Route path="/OffresCanada" element={<OffresCanada />} />
+          <Route path="/EntreprisesTunisie" element={<EntreprisesTunisie />} />
+          <Route path="/EntreprisesFrance" element={<EntreprisesFrance />} />
+          <Route path="/EntreprisesCanada" element={<EntreprisesCanada />} />
         </Routes>
       </div>
     </Router>

@@ -3,6 +3,7 @@ import MainRouter from "./MainRouter";
 import { UserContext } from "./Usercontext";
 import { useState } from "react";
 import { Offrecontext } from "./Offrecontext";
+import { Entreprisescontext } from "./Entreprisescontext";
 
 function App() {
   const [users, setusers] = useState([
@@ -100,12 +101,88 @@ function App() {
       pays: "Tunisie",
     },
   ]);
+  const [entreprises, setentreprises] = useState([
+    {
+      nom: "Boston Scientific",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/5640612/logo.png?1646991116",
+      desc: "Grande entreprise",
+      couv: "https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/5663064/big.Jpg?1647440262",
+      pres: "Innovative medical solutions.",
+      pays: "France",
+    },
+    {
+      nom: "OTIS",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/1384456/logo.png?1640614666",
+      desc: "Grande entreprise",
+      couv: "https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/5301478/big.jpg?1640018916",
+      pres: "Leader mondial ascenseurs et escalators",
+      pays: "France",
+    },
+    {
+      nom: "CHU de Liège",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/2182156/logo.png?1587626576",
+      desc: "Association ",
+      couv: "https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/2202876/big.jpg?1560860304",
+      pres: "Hôpital universitaire public et pluraliste",
+      pays: "Canada",
+    },
+    {
+      nom: "Tunisie Telecom",
+      logo: "https://www.tunisietelecom.tn/_layouts/15/MCS.TT.Internet.UI/assets/img/logo-tt.svg",
+      desc: " Grande Entreprise ",
+      couv: "https://www.tunisietelecom.tn/_layouts/15/MCS.TT.Internet.UI/assets/img/login_lg.jpg",
+      pres: "Agence tunisienne d'Internet",
+      pays: "Tunisie",
+    },
+    {
+      nom: "as a Guest",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/6074928/logo.png?1656426907",
+      desc: " Start-up ",
+      couv: "	https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/6085107/big.png?1656412643",
+      pres: "La 1ère agence de voyages à prix fixes",
+      pays: "Canada",
+    },
+    {
+      nom: "fifty-five",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/6026577/logo.png?1655125978",
+      desc: " PME",
+      couv: "		https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/6065119/big.png?1655906315",
+      pres: "La société de données pour le succès de la brandtech",
+      pays: "France",
+    },
+    {
+      nom: "ARMIS",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/1381084/logo.png?1524830433",
+      desc: "Start-up",
+      couv: "https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/1580413/big.jpg?1534413572",
+      pres: "Publicité multilocale",
+      pays: "Canada",
+    },
+    {
+      nom: "SICAM",
+      logo: "https://scontent.ftun16-1.fna.fbcdn.net/v/t1.6435-9/81672308_1880397412258734_8404229710883586048_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Diga8IQ0vMAAX_x3ci6&_nc_oc=AQmWGBzt_FosS2LAOD2c1blcD3lqA5gmvR42i62BXozoKRI7a8W0kRD11lKDxlAxXms&tn=INxv-GVDBNCJyBuy&_nc_ht=scontent.ftun16-1.fna&oh=00_AT9w8cMzsNi5r1v1L9tsGTcg3HI6K3u3xMw35Y_dZ1JYcw&oe=62E8853F",
+      desc: "Entreprise Locale",
+      couv: "https://scontent.ftun16-1.fna.fbcdn.net/v/t39.30808-6/288275018_2479465869018549_7453686335042026105_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=4EeF34qTxdsAX_87D5S&_nc_ht=scontent.ftun16-1.fna&oh=00_AT8uwsrWVfValugOIWzNRQHe_QcsQC9pneK9lLBdjWInQQ&oe=62C9D387",
+      pres: "Société Industrielle des Conserves Alimentaires de Medjez el Bab",
+      pays: "Tunisie",
+    },
+    {
+      nom: "Gameloft",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/267860/logo.png?1646665832",
+      desc: "Grande entreprise",
+      couv: "https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/6105349/big.png?1656935970",
+      pres: "Développement et édition de jeux vidéo téléchargeables",
+      pays: "France",
+    },
+  ]);
 
   return (
     <div className="App">
       <UserContext.Provider value={{ users, setusers }}>
         <Offrecontext.Provider value={{ offres, setoffres }}>
-          <MainRouter />
+          <Entreprisescontext.Provider value={{ entreprises, setentreprises }}>
+            <MainRouter />
+          </Entreprisescontext.Provider>
         </Offrecontext.Provider>
       </UserContext.Provider>
     </div>

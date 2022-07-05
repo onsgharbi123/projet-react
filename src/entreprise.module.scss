@@ -1,0 +1,119 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+padding-top: 70px;
+font-family: "Century Gothic";
+
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+}
+.back{
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/6329454/pexels-photo-6329454.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=1500');
+display: flex;
+flex-direction: column;
+padding-top: 140px;
+
+}
+.offres{
+padding-top: 50px;
+padding-bottom: 50px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.btns{
+    margin-top: 130px;
+    margin-right: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btn{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    
+}
+.title{
+    color: white;
+    font-size: 4rem;
+
+}
+.box{
+    width: 370px;
+    height: 44vh;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.couverture{
+    width: 300px;
+    
+    position: absolute;
+
+   
+}
+
+.abs{
+    position: absolute;
+}
+.logo{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: 8px solid white;
+}
+.nom{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 150px;
+    font-size: 1.4rem;
+font-weight: 600;
+}
+.desc{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 150px;
+    color: gray;
+    font-size: 1.1rem;
+}
+.voir{
+    position: absolute;
+    margin-top: 240px;
+    background-color: transparent;
+    color :#45B53B;
+text-decoration: underline;
+border: none;
+font-weight: 600;
+font-size: 1.3rem;
+    
+}
+.pres{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 150px;
+    width: 220px;
+    text-align: start;
+    color: rgb(186, 183, 183);
+}
