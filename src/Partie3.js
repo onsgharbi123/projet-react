@@ -8,7 +8,12 @@ export default function Partie3() {
       <div className={Scss?.cadre}>
         <h3>Condidats</h3>
         <p className={Scss?.lance}>Lancez-vous</p>
-        <button className={Scss?.bout}>Publier votre CV</button>
+        <button
+          className={Scss?.bout}
+          onClick={() => navigate("/Ajoutdemande")}
+        >
+          Publier votre CV
+        </button>
       </div>
       <div className={Scss?.cadre}>
         <h3>Recruteurs</h3>

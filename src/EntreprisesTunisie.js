@@ -2,12 +2,15 @@ import React, { useContext } from "react";
 import scss from "./entreprise.module.scss";
 import { useNavigate } from "react-router-dom";
 import { Entreprisescontext } from "./Entreprisescontext";
+import Partie5 from "./Partie5";
+import Nav from "./Nav";
 
 export default function EntreprisesTunisie() {
   const { entreprises } = useContext(Entreprisescontext);
   const navigate = useNavigate();
   return (
     <div>
+      <Nav />
       <div className={scss?.nav}></div>
       <div className={scss?.container}>
         <div className={scss?.back}>
@@ -66,6 +69,9 @@ export default function EntreprisesTunisie() {
               );
             }
           })}
+        </div>
+        <div>
+          <Partie5 />
         </div>
       </div>
     </div>

@@ -4,36 +4,43 @@ import { useNavigate } from "react-router-dom";
 import { Offrecontext } from "./Offrecontext";
 import { useContext } from "react";
 import scss from "./Offre.module.scss";
+import Partie5 from "./Partie5";
+import Nav from "./Nav";
 
 export default function OffresCanada() {
   const navigate = useNavigate();
   const { offres } = useContext(Offrecontext);
   return (
     <div>
-      <div className={Scss?.nav}></div>
+      <Nav />
       <div className={Scss?.container}>
         <div className={Scss?.canada}>
-          <button className={Scss?.btn} onClick={() => navigate("/Stage")}>
-            Tous
-          </button>
-          <button
-            className={Scss?.btn}
-            onClick={() => navigate("/OffresTunisie")}
-          >
-            En Tunisie
-          </button>
-          <button
-            className={Scss?.btn}
-            onClick={() => navigate("/OffresFrance")}
-          >
-            En France
-          </button>
-          <button
-            className={Scss?.btn}
-            onClick={() => navigate("/OffresCanada")}
-          >
-            En canada
-          </button>
+          <div className={Scss?.title}>
+            <p>Trouvez votre stage Maintenant</p>
+          </div>
+          <div className={Scss?.btns}>
+            <button className={Scss?.btn} onClick={() => navigate("/Stage")}>
+              Tous
+            </button>
+            <button
+              className={Scss?.btn}
+              onClick={() => navigate("/OffresTunisie")}
+            >
+              En Tunisie
+            </button>
+            <button
+              className={Scss?.btn}
+              onClick={() => navigate("/OffresFrance")}
+            >
+              En France
+            </button>
+            <button
+              className={Scss?.btn}
+              onClick={() => navigate("/OffresCanada")}
+            >
+              En canada
+            </button>
+          </div>
         </div>
         <div>
           {offres.map((e) => {
@@ -41,7 +48,7 @@ export default function OffresCanada() {
               return (
                 <div className={scss?.item}>
                   <div>
-                    <img src={e.logo} width={170} height={180} />
+                    <img src={e.logo} width={190} height={200} />
                   </div>
                   <div className={scss?.infs}>
                     <h4 className={scss?.post}>{e.post}</h4>
@@ -60,6 +67,7 @@ export default function OffresCanada() {
             }
           })}
         </div>
+        <Partie5 />
       </div>
     </div>
   );

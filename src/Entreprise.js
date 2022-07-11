@@ -1,11 +1,14 @@
 import scss from "./entreprise.module.scss";
 import Offresentreprises from "./Offresentreprises";
 import { useNavigate } from "react-router-dom";
+import Partie5 from "./Partie5";
+import Nav from "./Nav";
 
 export default function Entreprise() {
   const navigate = useNavigate();
   return (
     <div>
+      <Nav />
       <div className={scss?.nav}></div>
       <div className={scss?.container}>
         <div className={scss?.back}>
@@ -40,6 +43,9 @@ export default function Entreprise() {
 
         <div className={scss?.offres}>
           <Offresentreprises />
+        </div>
+        <div>
+          <Partie5 />
         </div>
       </div>
     </div>

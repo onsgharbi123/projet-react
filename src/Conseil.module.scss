@@ -1,24 +1,17 @@
-.back{
-height : 600px;
-width: 100%;
- background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-    position: relative;
 
-
-}
 .text1{
-font-size: 2.25rem;
-    line-height: 2.5rem;
-color : black ;
-     padding-top: 5rem;
-font-weight: 700;
-    text-align: center;
-    letter-spacing: 0em;
+   font-size: 2.25rem;
+line-height: 2.5rem;
+   color : black ;
+padding-top: 5rem;
+   font-weight: 700;
+text-align: center;
+   letter-spacing: 0em;
 }
 .text2{
-    padding-top: 1.75rem;
-padding-left: 18rem;
-    padding-right: 18rem;
+padding-top: 1.75rem;
+    padding-left: 18rem;
+padding-right: 18rem;
     text-align: center;  
   line-height: 1.5rem;
     font-weight: 480;
@@ -28,43 +21,28 @@ padding-left: 18rem;
 
 
 .text3{
-margin-left: 15rem/* 240px */;
-    margin-right: 15rem/* 240px */;   
+ margin-top:  5px ;
+}
+
+.back2{
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    gap: 10px 10px;
+    margin-left: 10rem/* 240px */;
+    margin-right: 10rem/* 240px */;   
  margin-top: 3rem/* 48px */;
     align-items: center;
 }
-.back2{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-}
-.back3{
-    border-width: 1px;
-    border-style: solid;
---tw-border-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-border-opacity));
---tw-border-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-.back3:hover{
-  --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
- --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+.back2 > div {
+    border: 1px solid black;
+  }
 
-}
-.text3{
-    padding-top: 0.5rem;
-   
 
-}
 .text4{
- border-width: 1px;
-    border-style: solid;
---tw-border-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+    padding-top: 0.5rem;
     cursor: pointer;
 }
+
 .text4:hover{
 
   --tw-bg-opacity: 1;
@@ -77,13 +55,14 @@ margin-left: 15rem/* 240px */;
  --tw-bg-opacity: 1;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
     width: 100%;
-    height: 1500px;
+    height: 1100px;
     margin-top: 4rem;
+    background-color: #EEEEEEEE;
+
 
 }
 .back5{
     padding-top: 2.5rem/* 40px */;
-
 }
 .back6{
  --tw-bg-opacity: 1;
@@ -92,7 +71,7 @@ margin-left: 15rem/* 240px */;
     height: 300px;
  margin-left: 7rem;
     margin-right: 7rem;
-/* nchouf box shodow */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .back7{
 display : flex;
@@ -134,8 +113,7 @@ text-align: left;
     height: 505px;
     margin-left: 4rem;
     margin-right: 2.5rem;
-/* box shadow*/
-}
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
 .img2{
     width: 380px;
     height: 220px;
@@ -151,7 +129,7 @@ text-align: left;
 }
 .text9{
     text-align: left;
-    padding-top: 1rem/* 16px */;
+    padding-top: 10px ;
     padding-left: 2.5rem/* 40px */;
     color: rgb(71 85 105);
 
@@ -161,7 +139,7 @@ text-align: left;
     width: 380px;
     height: 505px;
     margin-right: 2.5rem/* 40px */;
-/* box shdoww*/	
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .img3{
 
@@ -181,15 +159,16 @@ color: rgb(132 204 22 );
 }
 .text10{
     text-align: left;
-    padding-top: 1rem/* 16px */;
+    padding-top: 7px ;
 	    padding-left: 2.5rem/* 40px */;
     color: rgb(71 85 105 );
 }
 .back11{
    background-color: rgb(255 255 255);
     width: 380px;
-    height: 505px;
+    height: 510px;
     margin-right: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
  }
 
 .img4{
@@ -197,24 +176,43 @@ color: rgb(132 204 22 );
     height: 220px;
 
 }
-.text11{
-    text-align: left;
-    padding-top: 1rem/* 16px */;
-    padding-left: 2rem/* 32px */;
-	 font-size: 1.5rem/* 24px */;
-    line-height: 2rem;
-color : green ;
-}
-.text12{
-    text-align: left;
-    padding-top: 1rem/* 16px */;
-    padding-left: 2.5rem/* 40px */;
-    color: rgb(71 85 105);
-    }
+
     .imgg{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        mix-blend-mode: overlay;
+        height: 550px;
+        background: linear-gradient(rgba(0,0,10,0.6),rgba(0,0,0,0.6)),url("https://www.iquesta.com/assets/img/covers/home_background4.jpg");
+        object-fit: cover;  
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 25%;
+        z-index: -100;
+
+        
     }
+    .text14{
+        font-size: 3rem;
+    line-height: 1;
+    color: white;
+    font-weight: 700;
+    padding-top: 10rem/* 160px */;
+
+
+    }
+    .text15{
+        color: white;
+        font-size: 2.25rem/* 36px */;
+    line-height: 2.5rem/* 40px */;
+    font-weight: 300;
+    padding-top: 2.5rem/* 40px */;
+
+
+    }
+.text16{
+    color: white;
+    font-size: 2.25rem/* 36px */;
+line-height: 2.5rem/* 40px */;
+font-weight: 300;
+padding-top: 2.5rem/* 40px */;
+
+
+}

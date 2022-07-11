@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     min-height: 1000px;
-    padding-top: 80px;
+  
     background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
@@ -16,16 +16,28 @@
     align-items: center;
 
 }
+.title{
+    position: absolute;
+    margin-left: 200px;
+    color: white;
+    font-family: "Century Gothic";
+font-size: 3.8rem;
+font-weight: bold;
+}
 .btns{
-width: 93%;
-height: 55vh;
+margin-top: 430px;
+margin-right: 970px;
+}
+.cover{
+width: 100%;
+height: 74vh;
 display: flex;
-flex-direction: row;
-background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/2260783/pexels-photo-2260783.jpeg?auto=compress&cs=tinysrgb&w=600");
-
-background-position: center;
+flex-direction: column;
+background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg?auto=compress&cs=tinysrgb&w=600");
+background-position: bottom;
 background-size: cover;
-align-items: flex-end;
+justify-content: center;
+background-attachment: fixed;
 }
 .btn{
     height: 40px;
@@ -38,36 +50,40 @@ font-weight: 500;}
     color: rgb(88, 189, 79);
     text-decoration: underline;
 }
-.france{
-    width: 93%;
-height: 55vh;
-display: flex;
-flex-direction: row;
-background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/2901211/pexels-photo-2901211.jpeg?auto=compress&cs=tinysrgb&w=600");
 
-background-position: center;
-background-size: cover;
-align-items: flex-end;
-}
+.france{
+    width: 100%;
+    height: 74vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/2901211/pexels-photo-2901211.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
+    background-attachment: fixed;
+    }
+
+
 .tunisie{
-    width: 93%;
-    height: 55vh;
+    width: 100%;
+    height: 74vh;
     display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/9424943/pexels-photo-9424943.jpeg?auto=compress&cs=tinysrgb&w=600");
-    
-    background-position: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/891116/pexels-photo-891116.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: bottom;
     background-size: cover;
-    align-items: flex-end;
-}
+    justify-content: center;
+    background-attachment: fixed;
+    }
+
 .canada{
-    width: 93%;
-    height: 55vh;
+    width: 100%;
+    height: 74vh;
     display: flex;
-    flex-direction: row;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress&cs=tinysrgb&w=600");
-    
-    background-position: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/3813320/pexels-photo-3813320.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-position: bottom;
     background-size: cover;
-    align-items: flex-end;
-}
+    justify-content: center;
+    background-attachment: fixed;
+    }

@@ -17,17 +17,18 @@ import OffresCanada from "./OffresCanada";
 import EntreprisesTunisie from "./EntreprisesTunisie";
 import EntreprisesFrance from "./EntreprisesFrance";
 import EntreprisesCanada from "./EntreprisesCanada";
+import Espacerecruteur from "./Espacerecruteur";
+import Ajoutdemande from "./Ajoutdemande";
 export default function MainRouter() {
   return (
     <Router>
       <div className="flex flex-col ">
-        <Nav />
         <Routes>
-          <Route path="/" element={<Acceuil />} />
+          <Route path="/" element={<Connect />} />
           <Route path="/Stage" element={<Stage />} />
           <Route path="/Conseil" element={<Conseil />} />
           <Route path="/Entreprise" element={<Entreprise />} />
-          <Route path="/Connect" element={<Connect />} />
+          <Route path="/Acceuil" element={<Acceuil />} />
           <Route path="/Compte" element={<Compte />} />
           <Route path="/Ajoutannonce" element={<Ajoutannonce />} />
           <Route path="/OffresTunisie" element={<OffresTunisie />} />
@@ -36,6 +37,8 @@ export default function MainRouter() {
           <Route path="/EntreprisesTunisie" element={<EntreprisesTunisie />} />
           <Route path="/EntreprisesFrance" element={<EntreprisesFrance />} />
           <Route path="/EntreprisesCanada" element={<EntreprisesCanada />} />
+          <Route path="/EspaceRecruteur" element={<Espacerecruteur />} />
+          <Route path="/Ajoutdemande" element={<Ajoutdemande />} />
         </Routes>
       </div>
     </Router>

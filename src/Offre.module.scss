@@ -1,14 +1,14 @@
 .item{
     width: 66vw;
-    height: 180px;
+    height: 200px;
     background-color: white;
     margin-top: 20px;
-    box-shadow: rgba(208, 208, 209, 0.753) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     justify-content: center;
     align-items: center;
     display: flex;
     text-align: start;
-    border-radius: 8px;
+   
     border: none;
     font-family: "Century Gothic";
   
@@ -26,11 +26,12 @@
     padding-right: 15px;
 }
 .post{
-color: #45B53B;
+color: black;
 font-weight: 600;
 }
 .pays{
-    color: #00A1B6;
+    color: rgb(88, 189, 79);
+
     font-weight: 600;
 }
 .desc{

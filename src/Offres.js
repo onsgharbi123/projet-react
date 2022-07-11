@@ -10,7 +10,7 @@ export default function Offres() {
         return (
           <div className={scss?.item}>
             <div className={scss?.logo}>
-              <img src={e.logo} width={170} height={180} />
+              <img src={e.logo} width={190} height={200} />
             </div>
             <div className={scss?.infs}>
               <h4 className={scss?.post}>{e.post}</h4>

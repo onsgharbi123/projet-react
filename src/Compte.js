@@ -31,7 +31,9 @@ export default function Compte() {
           <input type="password" />
           <label className={Style?.back}>Confirmation du mot de passe :</label>
           <input type="password" />
-          <button className={Style?.btn1}>M'inscrire</button>
+          <button className={Style?.btn1} onClick={() => navigate("/Acceuil")}>
+            M'inscrire
+          </button>
           <h4 className={Style?.back}>Vous êtes déjà inscrit.e ?</h4>
           <button className={Style?.btn2} onClick={() => navigate("/Connect")}>
             Connectez-vous

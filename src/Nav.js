@@ -30,16 +30,16 @@ export default function Nav() {
         </button>
         <ul className="nav__link-wrapper !opacity-[1]">
           <li className="nav__link">
-            <Link to="/">Acceuil</Link>
+            <Link to="/Acceuil">Acceuil</Link>
           </li>
           <li className="nav__link">
-            <Link to="/Stage">Stage</Link>
+            <Link to="/Stage">Offres</Link>
           </li>
           <li className="nav__link">
             <Link to="/Entreprise">Entreprises</Link>
           </li>
           <li className="nav__link ">
-            <Link to="/Connect">Connecter</Link>
+            <Link to="/EspaceRecruteur">Espace Recruteur</Link>
           </li>
           <li className="nav__link ">
             <Link to="/Conseil">Conseils</Link>

@@ -7,12 +7,13 @@ import tass from "./Tas2.jpg";
 import Vbg from "./video1.mp4";
 import Partie4 from "./Partie4";
 import Partie2 from "./Partie2";
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Partie1() {
   {
     /* const css = 'z-[50] text-[4rem] text-[white' */
   }
-
+  const navigate = useNavigate();
   return (
     <div>
       <div className={Back?.container1}>
@@ -50,7 +51,9 @@ export default function Partie1() {
             pratiques spécialement conçus pour vous, et vous voilà prêts à vous
             lancer
           </p>
-          <button className={Back?.btn}>Conseils et Astuces</button>
+          <button className={Back?.btn} onClick={() => navigate("/Conseil")}>
+            Conseils et Astuces
+          </button>
         </div>
       </div>
     </div>

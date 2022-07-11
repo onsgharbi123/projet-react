@@ -2,8 +2,11 @@ import React, { useContext, useState } from "react";
 import scss from "./Ajoutannonce.module.scss";
 import { Offrecontext } from "./Offrecontext";
 import Partie5 from "./Partie5";
+import { useNavigate } from "react-router-dom";
+import Nav from "./Nav";
 
 export default function Ajoutannonce() {
+  const navigate = useNavigate();
   const { offres, setoffres } = useContext(Offrecontext);
   const [nom, setnom] = useState("");
   const [post, setpost] = useState("");
@@ -30,9 +33,11 @@ export default function Ajoutannonce() {
         pays: pays,
       },
     ]);
+    navigate("/Acceuil");
   };
   return (
     <div className={scss?.container}>
+      <Nav />
       <div className={scss?.nav}></div>
       <div className={scss?.flex}>
         <div className={scss?.form}>

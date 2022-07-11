@@ -12,7 +12,7 @@ export default function Connect() {
   const [mdp, setmdp] = useState("");
   const conecter = () => {
     if (users.find((e) => e.name == nom && e.mdp == mdp)) {
-      navigate("/");
+      navigate("/Acceuil");
     } else {
       navigate("/Compte");
     }
@@ -20,7 +20,6 @@ export default function Connect() {
 
   return (
     <div className={Style?.container}>
-      <Nav />
       <div className={Style?.form1}>
         <h1 className={Style?.title1}>Se Connecter</h1>
         <div className={Style?.mincontainer}>
