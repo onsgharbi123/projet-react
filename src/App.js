@@ -4,7 +4,7 @@ import { UserContext } from "./Usercontext";
 import { useState } from "react";
 import { Offrecontext } from "./Offrecontext";
 import { Entreprisescontext } from "./Entreprisescontext";
-
+import { Demandecontext } from "./Demandecontext";
 function App() {
   const [users, setusers] = useState([
     { name: "ons", mdp: "123" },
@@ -175,13 +175,15 @@ function App() {
       pays: "France",
     },
   ]);
-
+  const [demande, setdemande] = useState([]);
   return (
     <div className="App">
       <UserContext.Provider value={{ users, setusers }}>
         <Offrecontext.Provider value={{ offres, setoffres }}>
           <Entreprisescontext.Provider value={{ entreprises, setentreprises }}>
-            <MainRouter />
+            <Demandecontext.Provider value={{ demande, setdemande }}>
+              <MainRouter />
+            </Demandecontext.Provider>
           </Entreprisescontext.Provider>
         </Offrecontext.Provider>
       </UserContext.Provider>

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Formik, form } from "formik";
 import TextField from "./Textfiled";
 import SelectFi from "./Selectfi";
 import SelectFa from "./Selectfa";
 import Gender from "./Gender";
 import * as Yup from "yup";
+import { Demandecontext } from "./Demandecontext";
 
 export default function Sign() {
+  const { demande, setdemande } = useContext(Demandecontext);
   const validate = Yup.object({
     fullname: Yup.string()
       .max(15, "Must be  15 characters or less")
@@ -118,7 +120,11 @@ export default function Sign() {
               {/* form-group// */}
               <Gender />
               <div className="form-group">
-                <button type="submit" className="btn btn-primary btn-block">
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block"
+                  onClick={() => setdemande([...demande, initialValues])}
+                >
                   {" "}
                   Publier
                 </button>
