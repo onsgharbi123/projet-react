@@ -120,11 +120,7 @@ export default function Sign() {
               {/* form-group// */}
               <Gender />
               <div className="form-group">
-                <button
-                  type="submit"
-                  className="btn btn-primary btn-block"
-                 }
-                >
+                <button type="submit" className="btn btn-primary btn-block">
                   {" "}
                   Publier
                 </button>
