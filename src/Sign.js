@@ -123,7 +123,7 @@ export default function Sign() {
                 <button
                   type="submit"
                   className="btn btn-primary btn-block"
-                  onClick={() => setdemande([...demande, initialValues])}
+                 }
                 >
                   {" "}
                   Publier
