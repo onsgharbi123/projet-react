@@ -17,15 +17,6 @@ export default function Espacerecruteur() {
           Recrutez les jeunes talents qui feront le succès de votre entreprise
         </p>
       </div>
-      {/* <div className={scss?.back}>
-        {demande.map((e) => {
-          return (
-            <div className={scss?.box}>
-              <h2>{e.fullname}</h2>
-            </div>
-          );
-        })}
-      </div>*/}
     </div>
   );
 }
