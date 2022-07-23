@@ -60,6 +60,9 @@ justify-content: center;
     margin-right: 20px;
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.box:hover{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+}
 .flex{
     display: flex;
     flex-direction: row;

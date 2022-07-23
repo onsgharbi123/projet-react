@@ -9,6 +9,7 @@ import { Demandecontext } from "./Demandecontext";
 
 export default function Sign() {
   const { demande, setdemande } = useContext(Demandecontext);
+
   const validate = Yup.object({
     fullname: Yup.string()
       .max(15, "Must be  15 characters or less")
@@ -120,7 +121,11 @@ export default function Sign() {
               {/* form-group// */}
               <Gender />
               <div className="form-group">
-                <button type="submit" className="btn btn-primary btn-block">
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-block"
+                  onClick={() => setdemande([...demande, { formik }])}
+                >
                   {" "}
                   Publier
                 </button>

@@ -21,19 +21,31 @@ export default function Ajoutannonce() {
     setlogo(url);
   };
   const ajoutannonce = () => {
-    setoffres([
-      ...offres,
-      {
-        nom: nom,
-        post: post,
-        ns: ns,
-        dure: duree,
-        descrip: descrip,
-        logo: logo,
-        pays: pays,
-      },
-    ]);
-    navigate("/Acceuil");
+    if (!nom) {
+      alert("le nom de l'Entreprise est Obligatoire");
+    } else if (!post) {
+      alert("il faut préciser le post avant publier");
+    } else if (!logo) {
+      alert("il faut ajouter logo de votre Entreprise");
+    } else if (!duree) {
+      alert("Il faut indiquer la durèe du stage disponible");
+    } else if (!pays) {
+      alert("il faut peciser la localisation du votre entreprise");
+    } else {
+      setoffres([
+        ...offres,
+        {
+          nom: nom,
+          post: post,
+          ns: ns,
+          dure: duree,
+          descrip: descrip,
+          logo: logo,
+          pays: pays,
+        },
+      ]);
+      navigate("/Stage");
+    }
   };
   return (
     <div className={scss?.container}>
@@ -45,9 +57,11 @@ export default function Ajoutannonce() {
             Recrutez vos futurs talents directement avec{"  "}
             <span className={scss?.stagy}>STAGY</span>
           </p>
+
           <div>
             <label>Nom de l'entreprise :</label>
             <input
+              required
               className={scss?.input}
               type="text"
               onChange={(e) => setnom(e.target.value)}

@@ -50,16 +50,7 @@ function App() {
       logo: "https://www.stage.fr/files/pictures/c8384841a25bb6e8e7c09fe3d119ac34.png",
       pays: "France",
     },
-    {
-      nom: "Tunisie Didact",
-      post: "Graphic Designer & Community Manager  ",
-      ns: "2 stagieres",
-      dure: "1mois",
-      descrip:
-        "Pour renforcer son Département Communication et Marketing,  Tunisie didact cherche un (e) :Stagiaire Graphic designer & Community manager",
-      logo: "http://www.tunisie-didact.com/img/tunisie-didact-logo-1558601826.jpg",
-      pays: "Tunisie",
-    },
+
     {
       nom: "Colas",
       post: "Stage en Génie Civil - Construction Automne",
@@ -99,6 +90,35 @@ function App() {
         "Gates training center , nous sommes un centre de formation basé en Tunisie avec plus de 5 ans sur le marché  ",
       logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Gil9-YYe3Id3Xqr6ptqWW0un8dRpsUOVpBBEKA1hwXFSVZUECAGXgY44PiizGGT_BaI&usqp=CAU",
       pays: "Tunisie",
+    },
+    {
+      nom: "Groupe Rocher",
+      post: " Juriste Immobilier H/F",
+      ns: "1 stagieres",
+      dure: "2 mois",
+      descrip: "Cosmétique, Textile et embellissement de la maison",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/241312/logo.png?1582566185",
+      pays: "France",
+    },
+    {
+      nom: "TotalEnergies",
+      post: " Ingénieur Junior éolien Offshore",
+      ns: "1 stagieres",
+      dure: "5 mois",
+      descrip:
+        "Pour réussir intégrer les métiers de l'électricité et des énergies renouvelables,",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/874018/logo.png?1628267603",
+      pays: "Canada",
+    },
+    {
+      nom: "Veolia",
+      post: "  Gestionnaire Rémunération et Reporting RH ",
+      ns: "3 stagieres",
+      dure: "2 mois",
+      descrip:
+        " Le Groupe conçoit et fournit des solutions de gestion de l'eau, des déchets et de l'énergie",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/1613/logo.png?1541417697",
+      pays: "Canada",
     },
   ]);
   const [entreprises, setentreprises] = useState([
@@ -174,8 +194,26 @@ function App() {
       pres: "Développement et édition de jeux vidéo téléchargeables",
       pays: "France",
     },
+    {
+      nom: "Veolia",
+      logo: "https://d1guu6n8gz71j.cloudfront.net/system/asset/logos/1613/logo.png?1541417697",
+      desc: "Grande entreprise",
+      couv: "	https://d1guu6n8gz71j.cloudfront.net/system/asset/covers/5557837/big.jpg?1645434130",
+      pres: "référence mondiale des services à l’environnement ",
+      pays: "Canada",
+    },
   ]);
-  const [demande, setdemande] = useState([]);
+  const [demande, setdemande] = useState([
+    {
+      nom: "Selim Barka",
+      niv: "Bac+2",
+      domaine: "Informatique",
+      msg: 'Bonjour, je suis ala recherche d"un stage de 2mois  ',
+      photo:
+        "https://media-exp1.licdn.com/dms/image/C4E03AQFX1aK0egi1Zg/profile-displayphoto-shrink_200_200/0/1654723445428?e=1663804800&v=beta&t=q77x-XcpeKdthkMqusc4gfaE0fyeiS0yUCeZXiGJ80w",
+      link: "https://www.linkedin.com/in/selim-barka/",
+    },
+  ]);
   return (
     <div className="App">
       <UserContext.Provider value={{ users, setusers }}>
